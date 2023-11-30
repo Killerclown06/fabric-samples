@@ -66,7 +66,6 @@ async function main(): Promise<void> {
         // Get a network instance representing the channel where the smart contract is deployed.
         const network = gateway.getNetwork(channelName);
 
-        // Get the smart contract from the network.
         const contract = network.getContract(chaincodeName);
 
         // Initialize a set of asset data on the ledger using the chaincode 'InitLedger' function.
